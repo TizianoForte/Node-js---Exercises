@@ -1,2 +1,3 @@
-import sum from "./es-04.mjs"
+import sum from "./es-04.mjs";
+
 sum(5,6);
