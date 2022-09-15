@@ -9,7 +9,7 @@ const app = (0, express_1.default)();
 app.get("/", (request, response) => {
     response.send("Il server è stato avviato!");
 });
-const port = 3000;
+const port = 3030;
 app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
 });
