@@ -6,10 +6,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const app = (0, express_1.default)();
-app.get("/", (request, response) => {
-    response.send("Il server è stato avviato!");
+app.get("/planets", (request, response) => {
+    const planets = [
+        { name: "Mercury" },
+        { name: "Venus" },
+        // { name: "Jupiter" },
+    ];
+    response.json(planets);
 });
-const port = 3000;
-app.listen(port, () => {
-    console.log(`[server]: Server is running at http://localhost:${port}`);
-});
+exports.default = app;
